@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Next Academy - Futebol & Estudo nos EUA. Oportunidades para jogadores brasileiros.">
-    <meta name="keywords" content="futebol, bolsa de estudo, futebol EUA, Next Academy">
-    <title>Next Academy - Futebol e Estudo nos EUA</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Next Academy</title>
+    <link rel="stylesheet" href="style.css"> <!-- Inclua seu arquivo CSS aqui -->
 </head>
-
 <body>
-    <!-- Barra de Navegação -->
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#programa">Programa</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
+    <!-- Seção 1: Hero ou Introdução -->
+    <section id="hero">
         <h1>Bem-vindo à Next Academy</h1>
-        <p>Transforme seu sonho de jogar futebol nos Estados Unidos em realidade! A Next Academy oferece mentoria acadêmica e esportiva com suporte completo.</p>
+        <p>Captação de jogadores para estudar e jogar futebol nos Estados Unidos.</p>
+        <button onclick="window.location.href='#contact'">Entre em Contato</button>
     </section>
 
-    <!-- Seção Programa -->
-    <section id="programa">
-        <h2>Nosso Programa</h2>
-        <p>Oportunidades de bolsas de estudo, treinamento de alta performance e apoio completo para inscrições nas universidades e ligas de futebol nos EUA.</p>
+    <!-- Seção 2: Sobre -->
+    <section id="about" class="section">
+        <h2>Sobre a Next Academy</h2>
+        <p>A Next Academy oferece mentoria acadêmica e esportiva para atletas brasileiros interessados em bolsas de estudo e oportunidades de futebol nos EUA.</p>
     </section>
 
-    <!-- Seção de Contato -->
-    <section id="contato">
+    <!-- Seção 3: Formulário de Contato -->
+    <section id="contact" class="section">
         <h2>Entre em Contato</h2>
-        <form action="submitForm.php" method="post">
-            <input type="text" id="name" name="name" placeholder="Seu Nome" required><br>
-            <input type="email" id="email" name="email" placeholder="Seu E-mail" required><br>
-            <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea><br>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Seu nome">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" placeholder="Sua mensagem"></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    <!-- Seção 4: Depoimentos -->
+    <section id="testimonials" class="section">
+        <h2>Depoimentos</h2>
+        <p>Aqui vão os depoimentos de nossos atletas.</p>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Botão de rolar para o topo -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Voltar ao topo</button>
+
+    <script src="script.js"></script> <!-- Inclua seu arquivo JavaScript aqui -->
 </body>
-
 </html>
