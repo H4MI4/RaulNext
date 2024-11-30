@@ -1,4 +1,4 @@
-// Função de scroll para o topo
+// 1. Função de scroll para o topo
 window.onscroll = function () {
     toggleScrollButton();
 };
@@ -18,7 +18,7 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Validação do Formulário de Contato
+// 2. Validação do Formulário de Contato
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
@@ -39,7 +39,7 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-// Animação no scroll (para seções)
+// 3. Animação no scroll (para seções)
 const sections = document.querySelectorAll('section');
 const options = {
     threshold: 0.2 // O quanto da seção precisa estar visível para iniciar a animação
