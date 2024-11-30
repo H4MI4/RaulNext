@@ -1,50 +1,52 @@
-/* Reset de estilos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-/* Corpo da página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Next Academy - Treine e estude futebol nos Estados Unidos. Oportunidades para jogadores brasileiros.">
+    <meta name="keywords" content="futebol, estudos, bolsa, futebol nos EUA, Next Academy">
+    <title>Next Academy - Futebol & Estudo nos EUA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-/* Container padrão para centralizar conteúdo */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
+<body>
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#programa">Programa</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 
-/* Header */
-header {
-    background-color: #005b96;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-    margin-bottom: 50px;
-}
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h1>Bem-vindo à Next Academy</h1>
+        <p>Treine e estude futebol nos Estados Unidos com o suporte completo da Next Academy. Oferecemos mentoria acadêmica e esportiva para jovens talentos brasileiros.</p>
+    </section>
 
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+    <!-- Seção Programa -->
+    <section id="programa">
+        <h2>Nosso Programa</h2>
+        <p>Oferecemos bolsas de estudo, treinamento de alta performance, apoio completo para inscrições e muito mais para que você alcance seu sonho de jogar futebol nos EUA.</p>
+    </section>
 
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm" action="submitForm.php" method="post">
+            <input type="text" id="name" name="name" placeholder="Seu Nome" required><br>
+            <input type="email" id="email" name="email" placeholder="Seu E-mail" required><br>
+            <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
-header .cta-button {
-    padding: 10px 20px;
-    background-color: #ff9900;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: back
+    <!-- Botão para voltar ao topo -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
