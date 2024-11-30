@@ -1,61 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Academy</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#programa">Programa</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Next Academy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="sobre" class="section">
-        <h2>Sobre a Next Academy</h2>
-        <p>A Next Academy conecta jovens jogadores de futebol a oportunidades educacionais e esportivas nos EUA.</p>
-        <div class="imagens-sobre">
-            <img src="imagens/jogador-1.jpg" alt="Jogador de Futebol" class="img-sobre">
-            <img src="imagens/jogador-2.jpg" alt="Jogador treinando" class="img-sobre">
-            <img src="imagens/campo-futebol.jpg" alt="Campo de Futebol" class="img-sobre">
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2>Sobre a Next Academy</h2>
+            <p>A Next Academy é uma plataforma inovadora que visa transformar a vida de jovens jogadores de futebol...</p>
+            <!-- Imagem da Next Academy -->
+            <img src="https://github.com/seu-usuario/next-academy-site/raw/main/foto1.jpg" alt="Foto da Next Academy" class="academy-img">
         </div>
-        <p>Oferecemos mentoria e suporte completo para alcançar o sucesso tanto no campo quanto na sala de aula.</p>
-        <a href="#contato" class="cta-btn">Entre em Contato</a>
     </section>
 
-    <section id="programa" class="section">
-        <h2>Nosso Programa</h2>
-        <p>Combinamos futebol e educação para transformar a vida de nossos atletas. Oferecemos bolsas de estudo e acesso a universidades nos EUA.</p>
-        <a href="#contato" class="cta-btn">Saiba Mais</a>
+    <section id="servicos" class="services-section">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="service-item">
+                <img src="https://github.com/seu-usuario/next-academy-site/raw/main/foto2.png" alt="Mentoria em Futebol" class="service-img">
+                <p>Mentoria especializada para atletas, ajudando no desenvolvimento pessoal e técnico.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://github.com/seu-usuario/next-academy-site/raw/main/foto3.jpg" alt="Educação e Bolsas de Estudo" class="service-img">
+                <p>Conexão com universidades e escolas esportivas para garantir bolsas de estudo.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contato" class="section">
-        <h2>Contato</h2>
-        <p>Quer saber mais sobre a Next Academy? Entre em contato conosco!</p>
-        <form id="contactForm">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contactForm" action="submit-form.php" method="POST">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Next Academy. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Next Academy. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
