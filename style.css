@@ -4,141 +4,44 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4; /* Cor de fundo neutra */
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #f0f0f0; /* Texto claro para contrastar com fundo escuro */
 }
 
 h1, h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: #eaeaea; /* Cor de texto mais suave */
 }
 
 section {
     padding: 50px 20px;
     margin: 20px 0;
-    background-color: #fff;
+    background-color: #333333; /* Fundo escuro para as seções */
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Sombra mais forte para contraste */
 }
 
 /* Estilo da seção "Hero" */
 #hero {
-    background-color: #007bff;
-    color: white;
+    background-color: #111111; /* Fundo mais escuro */
+    color: #f4f4f4; /* Texto claro */
     text-align: center;
     padding: 80px 20px;
 }
 
 #hero h1 {
     font-size: 3em;
+    color: #f4f4f4;
 }
 
 #hero p {
     font-size: 1.2em;
     margin-top: 10px;
+    color: #cccccc; /* Cor mais suave para o texto secundário */
 }
 
 /* Estilo dos botões */
 button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo do formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-
-input[type="text"], input[type="email"] {
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-}
-
-/* Estilo para animação de scroll */
-.section.animate {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.section {
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-/* Estilos do botão de rolar para o topo */
-#scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra do botão */
-}
-
-#scrollToTopBtn:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos do formulário de contato */
-#contactForm {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
-
-#contactForm button {
-    align-self: flex-start;
-}
-
-/* Estilos adicionais para o layout */
-@media (max-width: 768px) {
-    h1, h2 {
-        font-size: 1.8em;
-    }
-
-    #hero h1 {
-        font-size: 2.5em;
-    }
-
-    #hero p {
-        font-size: 1em;
-    }
-
-    section {
-        padding: 30px 15px;
-    }
-}
+    background-color: #44444
