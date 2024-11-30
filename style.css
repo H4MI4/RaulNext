@@ -1,110 +1,190 @@
-/* Configuração geral */
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Estilo do cabeçalho */
+/* Container padrão para centralizar conteúdo */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
 header {
-    background: #000;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #005b96;
+    color: white;
+    padding: 50px 0;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 50px;
 }
 
-/* Barra de navegação */
-nav {
-    background: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+header .cta-button {
     padding: 10px 20px;
-    display: inline-block;
-    transition: background 0.3s;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background: #444;
-    border-radius: 5px;
+header .cta-button:hover {
+    background-color: #e68a00;
 }
 
 /* Seções */
 section {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
+    padding: 50px 0;
 }
 
 section h2 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 20px;
-    color: #000;
+    font-size: 2.5em;
+    color: #005b96;
+    margin-bottom: 20px;
 }
 
-/* Estilo do botão */
-button {
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Sobre */
+#sobre {
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Programas */
+#programas {
+    background-color: #e8f4f8;
+}
+
+.programa {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.programa h3 {
+    font-size: 1.5em;
+    color: #005b96;
+    margin-bottom: 10px;
+}
+
+.programa p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Testemunhos */
+#testemunhos {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#testemunhos blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#testemunhos cite {
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
+    font-size: 1.1em;
+    color: #005b96;
+    font-weight: bold;
+}
+
+/* Processo Seletivo */
+#processo {
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+#processo p {
+    font-size: 1.2em;
+}
+
+/* Contato */
+#contato {
+    background-color: #005b96;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#contato a {
+    padding: 15px 25px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #444;
+#contato a:hover {
+    background-color: #e68a00;
 }
 
 /* Rodapé */
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 15px;
-    background: #333;
-    color: #fff;
-    font-size: 14px;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
 }
 
 /* Responsividade */
-@media (max-width: 768px) 
-                           
-    nav ul {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .programa {
+        width: 90%;
+        margin: 10px auto;
     }
 
-    nav ul li {
-        margin: 5px 0;
+    header h1 {
+        font-size: 2.5em;
     }
 
-    section {
-        padding: 15px;
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
     }
 }
