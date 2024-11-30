@@ -1,11 +1,11 @@
-/* Reset de estilos */
+/* Reset básico para garantir consistência em todos os navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* Corpo do site */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -13,178 +13,18 @@ body {
     line-height: 1.6;
 }
 
-/* Container padrão para centralizar conteúdo */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-/* Header */
-header {
-    background-color: #005b96;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-header .cta-button {
-    padding: 10px 20px;
-    background-color: #ff9900;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: background-color 0.3s;
-}
-
-header .cta-button:hover {
-    background-color: #e68a00;
-}
-
-/* Seções */
-section {
-    padding: 50px 0;
-}
-
-section h2 {
-    font-size: 2.5em;
-    color: #005b96;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-/* Sobre */
-#sobre {
-    background-color: #fff;
-    text-align: center;
-}
-
-/* Programas */
-#programas {
-    background-color: #e8f4f8;
-}
-
-.programa {
-    display: inline-block;
-    width: 30%;
-    margin: 1.5%;
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.programa h3 {
-    font-size: 1.5em;
-    color: #005b96;
-    margin-bottom: 10px;
-}
-
-.programa p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Testemunhos */
-#testemunhos {
-    background-color: #fff;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#testemunhos blockquote {
-    font-size: 1.5em;
-    font-style: italic;
-    color: #444;
-    margin-bottom: 20px;
-}
-
-#testemunhos cite {
-    display: block;
-    font-size: 1.1em;
-    color: #005b96;
-    font-weight: bold;
-}
-
-/* Processo Seletivo */
-#processo {
-    background-color: #f0f8ff;
-    text-align: center;
-}
-
-#processo p {
-    font-size: 1.2em;
-}
-
-/* Contato */
-#contato {
-    background-color: #005b96;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#contato a {
-    padding: 15px 25px;
-    background-color: #ff9900;
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#contato a:hover {
-    background-color: #e68a00;
-}
-
-/* Rodapé */
-footer {
+/* Estilo da barra de navegação */
+nav {
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    padding: 20px 0;
 }
 
-footer p {
-    font-size: 1em;
+nav ul {
+    list-style-type: none;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .programa {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    section h2 {
-        font-size: 2em;
-    }
-
-    section p {
-        font-size: 1em;
-    }
-}
+nav ul li {
+    display: inline;
+    margin: 
