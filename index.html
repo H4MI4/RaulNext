@@ -1,42 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Academy</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ligação correta do CSS -->
-</head>
-<body>
-    <header>
-        <h1>Bem-vindo à Next Academy</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>A Next Academy é especializada em mentoria acadêmica e esportiva para jovens talentos do futebol brasileiro.</p>
-    </section>
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <p>Oferecemos orientação personalizada para intercâmbios esportivos e acadêmicos nos Estados Unidos.</p>
-    </section>
+/* Container padrão para centralizar conteúdo */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <p>Email: contato@nextacademy.com</p>
-        <p>Telefone: +55 (11) 99999-9999</p>
-    </section>
+/* Header */
+header {
+    background-color: #005b96;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-    <footer>
-        <p>&copy; 2024 Next Academy. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header .cta-button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: back
